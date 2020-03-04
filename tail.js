@@ -6,15 +6,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 
- const eqArrays = function(arr1, arr2) {
-   for (let i = 0; i < arr1.length; i++) {
-    if (arr1.length !== arr2.length) {
-      return false;
-    } else if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
+const tail = function(array) {
+  return array.slice(1);
 }
 
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words); // no need to capture the return value since we are not checking it
+assertEqual(words.length, 3);
+console.log(tail(words));
+
+
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+
+
+
