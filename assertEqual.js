@@ -9,4 +9,5 @@ const assertEqual = function(actual, expected) {
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 assertEqual(1, 99);
+assertEqual(1, "This is a string.");
 assertEqual("I need coffee!", "I need coffee!");
